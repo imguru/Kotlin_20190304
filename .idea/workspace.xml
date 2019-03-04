@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/3_클래스문법.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/3_클래스문법.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex1/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex1/Program.java" afterDir="false" />
-    </list>
+    <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/3_클래스문법.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="83" column="24" lean-forward="true" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+            <state relative-caret-position="2187">
+              <caret line="81" column="3" selection-start-line="81" selection-end-line="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/3_클래스문법2.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="717">
+              <caret line="60" column="34" lean-forward="true" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -74,6 +80,7 @@
         <option value="$PROJECT_DIR$/src/2_기본문법.kt" />
         <option value="$PROJECT_DIR$/src/ex1/Program.java" />
         <option value="$PROJECT_DIR$/src/3_클래스문법.kt" />
+        <option value="$PROJECT_DIR$/src/3_클래스문법2.kt" />
       </list>
     </option>
   </component>
@@ -105,12 +112,6 @@
               <item name="Kotlin_20190304" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Kotlin_20190304" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Kotlin_20190304" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ex1" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -132,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin._3_클래스문법Kt">
+  <component name="RunManager" selected="Kotlin._3_클래스문법2Kt">
     <configuration name="_1_시작Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Kotlin_20190304" />
       <option name="VM_PARAMETERS" />
@@ -159,6 +160,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_3_클래스문법2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Kotlin_20190304" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="_3_클래스문법2Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_3_클래스문법Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Kotlin_20190304" />
       <option name="VM_PARAMETERS" />
@@ -174,6 +188,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._3_클래스문법2Kt" />
         <item itemvalue="Kotlin._3_클래스문법Kt" />
         <item itemvalue="Kotlin._2_기본문법Kt" />
         <item itemvalue="Kotlin._1_시작Kt" />
@@ -199,7 +214,7 @@
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15831988" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.024232633" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -207,7 +222,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25852585" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42794278" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -254,8 +269,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/3_클래스문법.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="83" column="24" lean-forward="true" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+        <state relative-caret-position="2187">
+          <caret line="81" column="3" selection-start-line="81" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/3_클래스문법2.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="60" column="34" lean-forward="true" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
         </state>
       </provider>
     </entry>
