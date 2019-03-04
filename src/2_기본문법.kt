@@ -46,6 +46,12 @@ fun main() {
 //       => 강력한 타입 제약이 있다.
 //       => 암묵적인 타입 캐스팅이 거의 허용되지 않는다.
 
+// 4. 변수를 선언하는 방법
+//     - var: 변수
+//       : User user = new User();
+//     - val: 상수
+//       : final User user = new User();
+/*
 fun main() {
     // val or var
     // var: int n
@@ -55,6 +61,25 @@ fun main() {
 
     var n3: Long = 0
     n3 = n1.toLong()
+}
+*/
+
+// 5. 기본 연산자(Bit 연산자)
+//  Java
+//     <<, >>(Arithmetic Shift), >>>(Logical Shift)
+fun main() {
+    // 2진수 리터럴 문법
+    val n = 0b1100
+    println(n)
+
+    println(n shl 1)  // <<
+    println(n shr 1)  // >>
+    println(n ushr 1) // >>>
+
+    println(n and 0b1000) // &
+    println(n or 0b1000)  // |
+    println(n xor 0b1000) // ^
+    println(n.inv()) // ~
 }
 
 
