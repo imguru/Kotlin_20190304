@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="" />
+    <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/7_클래스문법고급.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/7_클래스문법고급.kt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,12 +13,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/5_프로퍼티기본.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="513">
+              <caret line="51" column="9" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="51" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -23,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/6_접근지정자.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-370">
-              <caret line="26" column="34" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="34" />
+            <state relative-caret-position="438">
+              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -32,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex6/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="46">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
@@ -41,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex5/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="828">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#83#84#0" expanded="true" />
                 <element signature="e#110#111#0" expanded="true" />
@@ -56,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/7_클래스문법고급.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="-813">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -65,11 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/7_클래스문법고급2.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-              <folding>
-                <element signature="e#15#74#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -77,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/8_봉인된클래스.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            <state relative-caret-position="427">
+              <caret line="46" column="46" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="46" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -86,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/9_enum.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="78" column="17" lean-forward="true" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+            <state relative-caret-position="1428">
+              <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -95,12 +95,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex7/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+            <state relative-caret-position="966">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#526#527#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex4/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="123" column="8" lean-forward="true" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+            <state relative-caret-position="2829">
+              <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -142,19 +140,19 @@
         <option value="$PROJECT_DIR$/src/ex6/Program.java" />
         <option value="$PROJECT_DIR$/src/6_접근지정자.kt" />
         <option value="$PROJECT_DIR$/src/ex5/Program.java" />
-        <option value="$PROJECT_DIR$/src/7_클래스문법고급.kt" />
         <option value="$PROJECT_DIR$/src/ex7/Program.java" />
         <option value="$PROJECT_DIR$/src/7_클래스문법고급2.kt" />
         <option value="$PROJECT_DIR$/src/8_봉인된클래스.kt" />
         <option value="$PROJECT_DIR$/src/9_enum.kt" />
+        <option value="$PROJECT_DIR$/src/7_클래스문법고급.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-1280" />
-    <option name="y" value="-547" />
+    <option name="y" value="-524" />
     <option name="width" value="1280" />
-    <option name="height" value="1024" />
+    <option name="height" value="1001" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -164,8 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,6 +178,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,14 +293,10 @@
     <frame x="-1280" y="-524" width="1280" height="1001" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1615509" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20516963" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32893288" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.42794278" />
@@ -310,11 +304,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32893288" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -378,47 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/5_프로퍼티기본.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex6/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/6_접근지정자.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-370">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex4/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="123" column="8" lean-forward="true" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ex5/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#83#84#0" expanded="true" />
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/Comparable.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -440,46 +397,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/7_클래스문법고급.kt">
+    <entry file="file://$PROJECT_DIR$/src/ex6/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="46">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ex5/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#83#84#0" expanded="true" />
+            <element signature="e#110#111#0" expanded="true" />
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ex7/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+        <state relative-caret-position="966">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ex4/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2829">
+          <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/5_프로퍼티기본.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="51" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/6_접근지정자.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/7_클래스문법고급.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-813">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/7_클래스문법고급2.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <element signature="e#15#74#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/8_봉인된클래스.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="427">
+          <caret line="46" column="46" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="46" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/9_enum.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="78" column="17" lean-forward="true" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+        <state relative-caret-position="1428">
+          <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
         </state>
       </provider>
     </entry>

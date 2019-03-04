@@ -1,7 +1,7 @@
 package kex7
 
 // public final class Car
-// final: 상속 금지가 기본입니다.
+// final: 상속 금지 / 오버라이드 금지가 기본입니다.
 
 // open: 상속 가능 클래스
 open class Car(val name: String)
