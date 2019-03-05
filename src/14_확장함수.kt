@@ -54,7 +54,7 @@ fun main() {
 // 1 2 3 -> joinToString -> [1, 2, 3]
 
 // 아래의 함수를 Collection<T>라는 타입에 대해서 확장하고 싶다.
-fun <T> joinToString(
+fun <T> xjoinToString(
     collection: Collection<T>,
     separator: String = ", ",
     prefix: String = "",
@@ -74,12 +74,20 @@ fun <T> joinToString(
 
 fun main() {
     val list = listOf(10, 20, 30)
-    val result = joinToString(
-        collection = list,
+//    val result = joinToString(
+//        collection = list,
+//        separator = ", ",
+//        prefix = "[",
+//        postfix = "]"
+//    )
+
+    val result = list.xjoinToString(
         separator = ", ",
         prefix = "[",
         postfix = "]"
     )
+
+
 
     println(result)
 }
