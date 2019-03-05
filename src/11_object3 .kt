@@ -39,7 +39,6 @@ class MyMouseEvent: MouseAdapter {
 
 }
 
-
 fun main() {
     val window = Window()
     // window.mouseAdapter = MyMouseEvent()
