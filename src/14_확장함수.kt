@@ -22,8 +22,6 @@ import java.lang.StringBuilder
 
 //  해결 방법: 수평 확장을 통해 기능을 확장하자.!!
 
-// 문자열의 마지막 글자를 추출하는 함수
-// fun lastChar(text: String): Char = text[text.length - 1]
 
 /*
 class MyString: String() {
@@ -37,6 +35,10 @@ class MyString: String() {
 // img.glide.processing()
 // String. : 수신 객체 타입
 //   this  : 수신 객체 참조
+
+// 문자열의 마지막 글자를 추출하는 함수
+// fun lastChar(text: String): Char = text[text.length - 1]
+
 /*
 fun String.lastChar(): Char = this[this.length - 1]
 // private / protected 필드는 접근이 불가합니다.
@@ -54,6 +56,8 @@ fun main() {
 // 1 2 3 -> joinToString -> [1, 2, 3]
 
 // 아래의 함수를 Collection<T>라는 타입에 대해서 확장하고 싶다.
+
+/*
 fun <T> xjoinToString(
     collection: Collection<T>,
     separator: String = ", ",
@@ -63,6 +67,25 @@ fun <T> xjoinToString(
     val result = StringBuilder(prefix)
 
     for ((index, element) in collection.withIndex()) {
+        if (index > 0)
+            result.append(separator)
+        result.append(element)
+    }
+
+    result.append(postfix)
+    return result.toString()
+}
+*/
+
+
+fun <T> Collection<T>.xjoinToString(
+    separator: String = ", ",
+    prefix: String = "",
+    postfix: String = ""
+): String {
+    val result = StringBuilder(prefix)
+
+    for ((index, element) in withIndex()) {
         if (index > 0)
             result.append(separator)
         result.append(element)

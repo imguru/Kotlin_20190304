@@ -71,7 +71,7 @@ class Panel(rectangle: Rectangle) : UIElement by rectangle
 //    }
 // }
 
-fun main() {
+fun main(args: Array<String>) {
     val panel = Panel(Rectangle(10, 100, 30, 100))
     println(panel.getWidth())
     println(panel.getHeight())
