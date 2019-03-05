@@ -68,12 +68,14 @@ fun main() {
 //    Kotlin: Delegates.observable
 
 // MVC(Model-View-Controller)
+// View
 class TextView {
     var text: String by Delegates.observable("") { _, old, new ->
         println("TextView.text: $old -> $new")
     }
 }
 
+// Controller
 class Activity {
 //    var email: String = ""
 //        set(value) {
@@ -92,18 +94,36 @@ class Activity {
     val emailTextView = TextView()
 }
 
+/*
 fun main() {
     val activity = Activity()
 
     activity.email = "chansik.yun@gmail.com"
     activity.email = "gildong.hong@gmail.com"
 }
+*/
 
+// 3. vetoable: 사용자가 지정한 validation 규칙에 부합되지 않으면 값이 변경되지 않습니다.
+class Person {
+    val myRule = Delegates.vetoable("unnamed") { _, old, new ->
+        // validation 규칙
+        new.length >= 5
+    }
 
+    // username은 반드시 5글자 이상이어야 한다.
+    var username: String by myRule
+    var email: String by myRule
+}
 
+fun main() {
+    val person = Person()
 
+    person.username = "Tom"
+    println(person.username)
 
-
+    person.username = "Tommy"
+    println(person.username)
+}
 
 
 
