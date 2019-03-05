@@ -11,7 +11,6 @@ import java.util.*
 // 2. toString()
 // 3. 깊은 복사
 //    java: clone()
-
 class User(val name: String, val age: Int) {
     // 비구조화 선언을 지원하는 방법
     //  => '연산자 오버로딩'을 통해 제공할 수 있습니다.
