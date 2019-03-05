@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="" />
+    <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/10_데이터클래스.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_데이터클래스.kt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/10_데이터클래스.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+            <state relative-caret-position="121">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -187,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="Kotlin.ex10._10_데이터클래스Kt">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ex10.Program" />
       <module name="Kotlin_20190304" />
@@ -255,8 +257,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Program" />
         <item itemvalue="Kotlin.ex10._10_데이터클래스Kt" />
+        <item itemvalue="Application.Program" />
         <item itemvalue="Kotlin.ex9._9_enumKt" />
         <item itemvalue="Kotlin.ex8._8_봉인된클래스Kt" />
         <item itemvalue="Kotlin.ex7_2._7_클래스문법고급2Kt" />
@@ -286,7 +288,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42794278" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42794278" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -479,8 +481,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/10_데이터클래스.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        <state relative-caret-position="121">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
