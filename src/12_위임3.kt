@@ -1,6 +1,7 @@
 package ex12_3
 
 import java.util.concurrent.TimeUnit
+import kotlin.properties.Delegates
 
 // 12_위임3.kt
 
@@ -51,6 +52,7 @@ class User {
     }
 }
 
+/*
 fun main() {
     println("Program 시작")
     val user = User()     // !!
@@ -59,6 +61,67 @@ fun main() {
     // user.init()
     user.foo()
 }
+*/
+
+// 2. 프로퍼티의 값의 변경에 따라서 수행되는 로직을 캡슐화할 수 있습니다.
+//    iOS: KVO(Key-Value Observation)
+//    Kotlin: Delegates.observable
+
+// MVC(Model-View-Controller)
+class TextView {
+    var text: String by Delegates.observable("") { _, old, new ->
+        println("TextView.text: $old -> $new")
+    }
+}
+
+class Activity {
+//    var email: String = ""
+//        set(value) {
+//            emailTextView.text = value
+//            field = value
+//        }
+
+    var email: String by Delegates.observable("unnamed") { prop, old, new ->
+        // 값이 변경되었을 때 호출되는 블록
+        println("$old -> $new")
+        emailTextView.text = new
+    }
+
+
+    // model의 데이터가 변경될 때마다, emailTextView.text도 변경되어야 한다.
+    val emailTextView = TextView()
+}
+
+fun main() {
+    val activity = Activity()
+
+    activity.email = "chansik.yun@gmail.com"
+    activity.email = "gildong.hong@gmail.com"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
