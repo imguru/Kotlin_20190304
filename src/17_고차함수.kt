@@ -3,6 +3,7 @@
 
 // 고차 함수의 활용
 // 1. 다양한 시나리오에서 동작하는 함수의 코드 중복을 없앨 수 있다.
+// 2. 함수의 재사용성을 극대화!
 
 // Kotlin's Collection은 자바의 Collection과 차이가 있습니다.
 //   listOf,          mapOf,       setOf

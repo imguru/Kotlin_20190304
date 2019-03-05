@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/10_데이터클래스.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/10_데이터클래스.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/11_object3 .kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/11_object3 .kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/13_함수형프로그래밍.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/13_함수형프로그래밍.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/17_고차함수.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/17_고차함수.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -71,11 +67,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/17_고차함수.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+            <state relative-caret-position="150">
+              <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/17_고차함수2.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -98,22 +103,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/11_object3 .kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="45" column="9" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -158,6 +154,7 @@
         <option value="$PROJECT_DIR$/src/11_object3 .kt" />
         <option value="$PROJECT_DIR$/src/13_함수형프로그래밍.kt" />
         <option value="$PROJECT_DIR$/src/17_고차함수.kt" />
+        <option value="$PROJECT_DIR$/src/17_고차함수2.kt" />
       </list>
     </option>
   </component>
@@ -219,7 +216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin._17_고차함수Kt">
+  <component name="RunManager" selected="Kotlin.ex17._17_고차함수2Kt">
     <configuration name="Program (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ex17.Program" />
       <module name="Kotlin_20190304" />
@@ -272,14 +269,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ex14._14_확장함수Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="ex17._17_고차함수2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Kotlin_20190304" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ex14._14_확장함수Kt" />
+      <option name="MAIN_CLASS_NAME" value="ex17._17_고차함수2Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -287,11 +284,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ex17._17_고차함수2Kt" />
         <item itemvalue="Kotlin._17_고차함수Kt" />
         <item itemvalue="Application.Program (1)" />
         <item itemvalue="Kotlin._15_확장프로퍼티Kt" />
         <item itemvalue="Kotlin.ex14_2._14_확장함수2Kt" />
-        <item itemvalue="Kotlin.ex14._14_확장함수Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -682,8 +679,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/17_고차함수.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="168" column="4" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+        <state relative-caret-position="150">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/17_고차함수2.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
         </state>
       </provider>
     </entry>
