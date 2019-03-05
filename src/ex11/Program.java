@@ -2,6 +2,8 @@ package ex11;
 
 // Java's Singleton
 
+import ex11_2.Point;
+
 import java.lang.reflect.Constructor;
 
 // 문제점
@@ -111,8 +113,26 @@ class Cursor {
     }
 }
 
+//class Point {
+//    static int n = 0;
+//
+//    // 정적 팩토리 메소드
+//    static Point newPoint() {
+//        ++n;
+//        System.out.println(n + "번째 객체");
+//        return new Point();
+//    }
+//}
+
+
 public class Program {
     public static void main(String[] args) {
+//        Point p1 = Point.newPoint();
+//        Point p2 = Point.newPoint();
+//        Point p3 = Point.newPoint();
+
+        // Point p1 = Point.Utils.newPoint();
+        Point p1 = Point.Companion.newPoint();
     }
 }
 
