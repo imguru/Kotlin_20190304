@@ -122,10 +122,40 @@ fun isOdd(e: Int) = e % 2 == 1
 
 // 방법 2. 함수 기반의 정책 전달 방식
 fun filterEvens(data: List<Int>): List<Int> = filter(data, ::isEven)
+
 fun filterOdds(data: List<Int>): List<Int> = filter(data, ::isOdd)
 
 fun main() {
     val list = listOf(1, 2, 3, 4, 5)
+
+    // 함수를 인자로 전달할 경우, 이름있는 함수를 전달해도 되지만,
+    // '이름 없는 코드 블록(또는 무명 함수)'을 전달하는 것도 가능합니다.
+    //   => 코틀린은 이름 없는 코드 블록과 이름 없는 함수가 다릅니다.
+
+    // 이름 없는 코드 블록 - 람다(Lambda)
+    //  : 람다 블록에서는 일반적으로 return 하면 안됩니다.
+    //    => 람다 블록의 최종 결과는 마지막 라인의 결과에 의해서 결정됩니다.
+    filter(list, { e: Int ->
+        // return e % 2 == 0
+        e % 2 == 0
+    })
+
+    // 인자의 타입은 컴파일러가 추론 가능하다.
+    filter(list, { e ->
+        e % 2 == 0
+    })
+
+    // 인자가 한개인 경우, it 이라는 키워드로 자동 지정됩니다.
+    filter(list, {
+        it % 2 == 0
+    })
+
+    // 정책 인자가 함수의 마지막 인자로 전달될 경우, 람다를 함수 호출 괄호의 밖에
+    // 두는 것이 가능합니다.
+    //  -> trailing lambda
+    filter(list) {
+        it % 2 == 0
+    }
 
     // filterEvens - 짝수
     println(filterEvens(list))
