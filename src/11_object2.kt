@@ -74,7 +74,6 @@ fun main() {
 
 // 동반 객체는 '객체' 이기 때문에 인터페이스를 구현하는 것도 가능합니다.
 // JSON -> Map
-
 interface MapFactory<T> {
     fun fromMap(map: Map<String, Any>): T
 }

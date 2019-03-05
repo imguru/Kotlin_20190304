@@ -124,15 +124,43 @@ class Cursor {
 //    }
 //}
 
+interface OnClickListener {
+    void onClick(Button button);
+}
+
+class Button {
+    private OnClickListener listener;
+    public void setOnClickListener(OnClickListener listener) {
+        this.listener = listener;
+    }
+
+    public void click() {
+        if (listener != null) {
+            listener.onClick(this);
+        }
+    }
+}
+
 
 public class Program {
     public static void main(String[] args) {
+        Button button = new Button();
+        button.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(Button button) {
+                System.out.println("Button Clicked");
+            }
+        });
+
+        button.click();
+
+
 //        Point p1 = Point.newPoint();
 //        Point p2 = Point.newPoint();
 //        Point p3 = Point.newPoint();
 
         // Point p1 = Point.Utils.newPoint();
-        Point p1 = Point.Companion.newPoint();
+        // Point p1 = Point.Companion.newPoint();
     }
 }
 

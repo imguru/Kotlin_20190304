@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/11_object2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/11_object2.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ex11/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex11/Program.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/11_object2.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="82" column="40" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="40" />
+            <state relative-caret-position="283">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/11_object3 .kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -26,10 +35,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ex11/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="124" column="3" lean-forward="true" selection-start-line="124" selection-start-column="3" selection-end-line="124" selection-end-column="3" />
+            <state relative-caret-position="229">
+              <caret line="152" column="9" lean-forward="true" selection-start-line="147" selection-start-column="34" selection-end-line="152" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2609#2610#0" expanded="true" />
+                <element signature="e#2648#2649#0" expanded="true" />
+                <element signature="e#2999#3000#0" expanded="true" />
+                <element signature="e#3059#3060#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +83,10 @@
         <option value="$PROJECT_DIR$/src/ex10/Program.java" />
         <option value="$PROJECT_DIR$/src/10_데이터클래스.kt" />
         <option value="$PROJECT_DIR$/src/11_object.kt" />
-        <option value="$PROJECT_DIR$/src/ex11/Program.java" />
         <option value="$PROJECT_DIR$/src/11_object2.kt" />
+        <option value="$PROJECT_DIR$/src/3_object3.kt" />
+        <option value="$PROJECT_DIR$/src/ex11/Program.java" />
+        <option value="$PROJECT_DIR$/src/11_object3 .kt" />
       </list>
     </option>
   </component>
@@ -101,6 +116,19 @@
               <item name="Kotlin_20190304" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Kotlin_20190304" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kotlin_20190304" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ex11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Kotlin_20190304" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Kotlin_20190304" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ex11" type="462c0819:PsiDirectoryNode" />
+              <item name="Program.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -127,26 +155,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.ex11_2._11_object2Kt">
+  <component name="RunManager" selected="Kotlin.ex11_3._11_object3_Kt">
     <configuration name="Program (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ex11.Program" />
       <module name="Kotlin_20190304" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ex11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ex10.Program" />
-      <module name="Kotlin_20190304" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ex10.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,13 +208,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ex11_3._11_object3_Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Kotlin_20190304" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ex11_3._11_object3_Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.ex11_2._11_object2Kt" />
+        <item itemvalue="Kotlin.ex11_3._11_object3_Kt" />
         <item itemvalue="Application.Program (1)" />
+        <item itemvalue="Kotlin.ex11_2._11_object2Kt" />
         <item itemvalue="Kotlin._11_objectKt" />
         <item itemvalue="Kotlin.ex10._10_데이터클래스Kt" />
-        <item itemvalue="Application.Program" />
       </list>
     </recent_temporary>
   </component>
@@ -220,13 +248,13 @@
     <frame x="-1280" y="-524" width="1280" height="1001" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14943457" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.024232633" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42794278" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42794278" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -431,20 +459,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/11_object2.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ex11/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="124" column="3" lean-forward="true" selection-start-line="124" selection-start-column="3" selection-end-line="124" selection-end-column="3" />
+        <state relative-caret-position="229">
+          <caret line="152" column="9" lean-forward="true" selection-start-line="147" selection-start-column="34" selection-end-line="152" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2609#2610#0" expanded="true" />
+            <element signature="e#2648#2649#0" expanded="true" />
+            <element signature="e#2999#3000#0" expanded="true" />
+            <element signature="e#3059#3060#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/11_object2.kt">
+    <entry file="file://$PROJECT_DIR$/src/11_object3 .kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="82" column="40" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="40" />
+        <state relative-caret-position="364">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
         </state>
       </provider>
     </entry>
