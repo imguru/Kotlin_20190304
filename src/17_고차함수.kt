@@ -157,6 +157,16 @@ fun main() {
         it % 2 == 0
     }
 
+    // 많은 다른 언어는 람다와 무명 함수를 동일시합니다.
+    // 하지만 코틀린은 구분되어 있습니다.
+
+    // 무명(익명) 함수
+    filter(list, fun(e: Int): Boolean {
+        return e % 2 == 0
+    })
+
+    filter(list, fun(e: Int) = e % 2 == 0)
+
     // filterEvens - 짝수
     println(filterEvens(list))
     println(filterOdds(list))

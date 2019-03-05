@@ -43,11 +43,13 @@ fun main() {
     val window = Window()
     // window.mouseAdapter = MyMouseEvent()
 
+    val n = 42
+
     // 이벤트 리스너가 하나만 사용된다면, 무명 객체가 좋다.
     // => 코틀린에서 무명 객체를 만드는 방법
     window.mouseAdapter = object : MouseAdapter {
         override fun mouseClicked() {
-            println("MyEvent - mouseClicked")
+            println("MyEvent - mouseClicked - $n")
         }
 
         override fun mouseEntered() {
