@@ -34,9 +34,13 @@ class User {
     //  - var 에 대해서만 사용할 수 있다.
     //  - 초기화하지 않고 사용할 경우,
     //    UninitializedPropertyAccessException 발생합니다.
+    //  - setter / getter의 재정의가 불가능합니다.
+    //  - primitive 타입에 대해서는 사용할 수 없습니다.
+    //    (Int, Long, Float, Double, Char, Byte)
 
     // lazy: Property 위임 객체
     //  - val에 대해서 사용할 수 있다.
+    //  - 멀티 스레드에서 동시에 접근할 경우, 안전하게 한번만 초기화됨을 보장합니다.
 
     // fun init() {
     //    heavyObject = HeavyObject()
