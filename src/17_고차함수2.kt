@@ -12,6 +12,7 @@ fun foo(): (String) -> String {
 }
 */
 
+/*
 fun foo(): (String) -> String = { str ->
     str.reversed()
 }
@@ -22,6 +23,27 @@ fun main() {
 
     println(fn("hello"))
 }
+*/
+
+// 아래 함수는 '런타임'에 정책을 생성하는 함수입니다.
+// isOdd, isEven
+fun modulo(k: Int, r: Int): (Int) -> Boolean = { value ->
+    value % k == r
+}
+
+fun main() {
+    // val isOdd = modulo(2, 1)
+    // val isEven = modulo(2, 0)
+
+    val list = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+    println(list.filter(modulo(2, 1)))
+    println(list.filter(modulo(2, 0)))
+}
+
+
+
+
 
 
 
