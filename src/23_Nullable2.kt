@@ -32,7 +32,6 @@ fun getCountryName3(person: Person): String {
     //  - 삼항 연산자가 제공되지 않습니다.
     //  ?: - Elvis operator
     //     : null 이면 기본값을 제공하는 연산자
-
     return person.address?.city?.country?.name ?: "Unknown"
 }
 
