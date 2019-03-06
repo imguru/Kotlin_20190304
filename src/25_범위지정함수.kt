@@ -40,6 +40,8 @@ fun alphabet(): String {
 }
 
 // with - 수신 객체 지정(this) 람다
+// with 결과 - 람다 블록에 의해서 결정된다.
+
 fun alphabet_with(): String = with(StringBuilder()) {
     for (letter in 'A'..'Z')
         append(letter)
@@ -47,6 +49,18 @@ fun alphabet_with(): String = with(StringBuilder()) {
     toString()
 }
 
+// apply 결과 - 수신 객체가 결과가 됩니다.
+fun alphabet_apply(): String = StringBuilder().apply {
+    for (letter in 'A'..'Z')
+        append(letter)
+    append("\n")
+}.toString()
+
+fun alphabet_buildString(): String = buildString {
+    for (letter in 'A'..'Z')
+        append(letter)
+    append("\n")
+}
 
 fun main() {
     println(alphabet())
