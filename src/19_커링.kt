@@ -82,7 +82,7 @@ fun main() {
     log(Level.INFO, System.out, "main 함수가 시작되었습니다.")
 
     compute()
-    
+
     // 람다
     compute { message ->
         log(Level.INFO, System.out, message)
