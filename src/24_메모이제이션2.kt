@@ -24,9 +24,19 @@ data class User(val name: String, val age: Int, val address: String)
 // JSON serialization - Gson
 fun User.toJson(): String {
     println("User.toJson()")
+
+    /*
     val gson = GsonBuilder()
         .setPrettyPrinting()
         .create()
+    */
+
+    // 코틀린에서 자바의 빌더 패턴을 사용하는 전형적인 코드 형식
+    val gson = GsonBuilder().apply {
+        setLenient()
+        setPrettyPrinting()
+        setVersion(3.14)
+    }.create()
 
     return gson.toJson(this)
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/25_범위지정함수.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/25_범위지정함수.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/24_메모이제이션2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/24_메모이제이션2.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,20 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/24_메모이제이션2.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="283">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/25_범위지정함수.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="291">
+              <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -94,8 +94,8 @@
         <option value="$PROJECT_DIR$/src/23_Nullable.kt" />
         <option value="$PROJECT_DIR$/src/23_Nullable2.kt" />
         <option value="$PROJECT_DIR$/src/24_메모이제이션.kt" />
-        <option value="$PROJECT_DIR$/src/24_메모이제이션2.kt" />
         <option value="$PROJECT_DIR$/src/25_범위지정함수.kt" />
+        <option value="$PROJECT_DIR$/src/24_메모이제이션2.kt" />
       </list>
     </option>
   </component>
@@ -660,13 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/24_메모이제이션2.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/contracts/ContractBuilder.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -690,8 +683,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/25_범위지정함수.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="291">
+          <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/24_메모이제이션2.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
         </state>
       </provider>
     </entry>
