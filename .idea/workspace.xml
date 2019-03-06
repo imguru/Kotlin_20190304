@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/17_고차함수2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/17_고차함수2.kt" afterDir="false" />
-    </list>
+    <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,11 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/17_고차함수2.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+            <state relative-caret-position="812">
+              <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/18_함수합성.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -146,6 +153,7 @@
         <option value="$PROJECT_DIR$/src/13_함수형프로그래밍.kt" />
         <option value="$PROJECT_DIR$/src/17_고차함수.kt" />
         <option value="$PROJECT_DIR$/src/17_고차함수2.kt" />
+        <option value="$PROJECT_DIR$/src/18_함수합성.kt" />
       </list>
     </option>
   </component>
@@ -207,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.ex17._17_고차함수2Kt">
+  <component name="RunManager" selected="Kotlin._18_함수합성Kt">
     <configuration name="Program (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ex17.Program" />
       <module name="Kotlin_20190304" />
@@ -247,14 +255,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ex14_2._14_확장함수2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="_18_함수합성Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Kotlin_20190304" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ex14_2._14_확장함수2Kt" />
+      <option name="MAIN_CLASS_NAME" value="_18_함수합성Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -275,11 +283,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._18_함수합성Kt" />
         <item itemvalue="Kotlin.ex17._17_고차함수2Kt" />
         <item itemvalue="Kotlin._17_고차함수Kt" />
         <item itemvalue="Application.Program (1)" />
         <item itemvalue="Kotlin._15_확장프로퍼티Kt" />
-        <item itemvalue="Kotlin.ex14_2._14_확장함수2Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -684,8 +692,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/17_고차함수2.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        <state relative-caret-position="812">
+          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/18_함수합성.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
         </state>
       </provider>
     </entry>
