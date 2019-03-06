@@ -36,6 +36,28 @@ fun logMessage(filename: String, message: String) {
     require(message.isBlank())
 }
 
+// 2. 명시적인 실행 종료 함수
+//    error
 fun main() {
-
+    // error("더 이상 실행할 수 있습니다.")  // IllegalStateException
+    TODO("조금만 더 기다려주세요")    // NotImplementedError
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
