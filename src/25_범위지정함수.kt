@@ -86,6 +86,10 @@ fun main() {
 // Fragment / RecyclerViewAdapter
 //   with: '반복되는 참조연산'의 중복을 없앨 때 사용합니다.
 
+// Nothing - 함수가 반환을 아예 하지 않을 경우 사용하는 타입
+fun foo(): Nothing {
+    throw Exception("...")
+}
 
 // use - Java's Try with Resources 대체합니다.
 fun main() {
