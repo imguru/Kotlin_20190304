@@ -30,7 +30,10 @@ fun lookForAlice(people: List<Person>) {
 
 // 2. 지역 반환: 람다 블록에 대한 반환이 필요하다.
 //             람다 블록 안에서 오류 처리 등을 통해 람다 블록을 빠져나와야 되는 경우...
+/*
 fun lookForAlice(people: List<Person>) {
+
+    // 내부 반복문
     people.forEach { person ->
         if (person.name == "Alice") {
             println("Found!!!")
@@ -38,6 +41,44 @@ fun lookForAlice(people: List<Person>) {
             return@forEach  // 지역 반환
         }
     }
+
+    println("Cannot find Alice!")
+}
+*/
+
+// 비지역 반환은 무조건 사용할 수 있는 개념이 아닙니다.
+//  => inline 함수에서만 사용할 수 있습니다.
+/*
+inline fun List<Person>.forEach2(action: (Person) -> Unit): Unit {
+    for (e in this)
+        action(e)
+}
+
+fun lookForAlice(people: List<Person>) {
+    // 내부 반복문
+
+    // 지역 반환의 람다의 라벨을 변경하는 방법
+    people.forEach2 hello@{ person ->
+        if (person.name == "Alice") {
+            println("Found!!!")
+            // return  // - 비지역 반환
+            return@hello  // 지역 반환
+        }
+    }
+
+    println("Cannot find Alice!")
+}
+*/
+
+// 익명 함수는 지역 반환으로 return이 동작합니다.
+fun lookForAlice(people: List<Person>) {
+    people.forEach(fun(person: Person) {
+        if (person.name == "Alice") {
+            println("Found!!!")
+            // return               // 지역 반환
+            return@lookForAlice     // 비지역 반환을 명시적으로 지정!
+        }
+    })
 
     println("Cannot find Alice!")
 }
@@ -50,7 +91,6 @@ fun main() {
     )
 
     lookForAlice(people)
-
 
 
 }
