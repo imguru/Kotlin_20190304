@@ -43,8 +43,6 @@ infix fun<A, B, C> ((A) -> B).compose(g: (B) -> C): (A) -> C = {
     g(this(it))
 }
 
-
-
 fun main() {
     val f: (String) -> Int = String::length
     val g: (Any) -> Int = Any::hashCode
