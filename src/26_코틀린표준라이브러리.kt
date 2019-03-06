@@ -2,8 +2,8 @@
 package ex26
 
 // 유입(신규 설치) / 전환(유료 결제)
-// 유입 -> 앱 하나 설치 평균 비용(2000 ~ 4000)
-// 전환 -> 유료 결제(리텐션 중요)
+// - 유입 -> 앱 하나 설치 평균 비용(2000 ~ 4000)
+// - 전환 -> 유료 결제(리텐션 중요)
 
 import java.io.File
 import java.lang.IllegalArgumentException
