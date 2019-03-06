@@ -3,7 +3,7 @@ package ex25
 import java.lang.StringBuilder
 
 // 25_범위지정함수
-//   let, with, apply
+//   let, with, apply, use
 
 // 1. let
 /*
@@ -50,6 +50,7 @@ fun alphabet_with(): String = with(StringBuilder()) {
 }
 
 // apply 결과 - 수신 객체가 결과가 됩니다.
+
 fun alphabet_apply(): String = StringBuilder().apply {
     for (letter in 'A'..'Z')
         append(letter)
@@ -62,17 +63,41 @@ fun alphabet_buildString(): String = buildString {
     append("\n")
 }
 
+//  객체 초기화의 과정이 복잡한 경우, 많이 사용합니다.
+class Sample {
+    fun foo() {}
+    fun goo() {}
+    fun hoo() {}
+}
+
+/*
 fun main() {
+    val sample = Sample().apply {
+        foo()
+        goo()
+        hoo()
+    }
+
     println(alphabet())
     println(alphabet_with())
 }
+*/
+
+// Fragment / RecyclerViewAdapter
+//   with: '반복되는 참조연산'의 중복을 없앨 때 사용합니다.
 
 
+// use - Java's Try with Resources 대체합니다.
+fun main() {
+    // 비메모리 자원을 안전하게 해지하는 구문
+    // use: AutoCloseable Extension Function
+    val resource = MyResource()
 
-
-
-
-
+    resource.use {
+        println("Kotlin....")
+        resource.foo()
+    }
+}
 
 
 
