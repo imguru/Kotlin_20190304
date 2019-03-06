@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/22_지역반환.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/22_지역반환.kt" afterDir="false" />
-    </list>
+    <list default="true" id="4e7092a1-4826-4af1-a562-6e4ddddad59f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,11 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/23_Nullable.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="348">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/23_Nullable2.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -144,6 +151,7 @@
         <option value="$PROJECT_DIR$/src/21_inline2.kt" />
         <option value="$PROJECT_DIR$/src/22_지역반환.kt" />
         <option value="$PROJECT_DIR$/src/23_Nullable.kt" />
+        <option value="$PROJECT_DIR$/src/23_Nullable2.kt" />
       </list>
     </option>
   </component>
@@ -199,20 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.ex23._23_NullableKt">
-    <configuration name="_19_커링Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="Kotlin_20190304" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="_19_커링Kt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.ex23_2._23_Nullable2Kt">
     <configuration name="_21_inlineKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Kotlin_20190304" />
       <option name="VM_PARAMETERS" />
@@ -252,6 +247,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ex23_2._23_Nullable2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="Kotlin_20190304" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ex23_2._23_Nullable2Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ex23._23_NullableKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Kotlin_20190304" />
       <option name="VM_PARAMETERS" />
@@ -267,11 +275,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ex23_2._23_Nullable2Kt" />
         <item itemvalue="Kotlin.ex23._23_NullableKt" />
         <item itemvalue="Kotlin.ex22._22_지역반환Kt" />
         <item itemvalue="Kotlin.ex21._21_inline2Kt" />
         <item itemvalue="Kotlin._21_inlineKt" />
-        <item itemvalue="Kotlin._19_커링Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +298,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1280" y="-524" width="1280" height="1001" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.19386107" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -315,13 +322,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ex6/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ex5/Program.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
@@ -703,8 +703,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/23_Nullable.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="348">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/23_Nullable2.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
         </state>
       </provider>
     </entry>
