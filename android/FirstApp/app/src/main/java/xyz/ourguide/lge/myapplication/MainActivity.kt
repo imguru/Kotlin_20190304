@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_main.*
 import kotlinx.android.synthetic.main.item_view.view.*
+import org.jetbrains.anko.toast
 import xyz.ourguide.lge.myapplication.databinding.MainActivityBinding
 import kotlin.properties.Delegates
 
@@ -69,12 +70,25 @@ class MainActivity : AppCompatActivity() {
 //            Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show()
 //        }
 
+        // String -> String!
+        //  : String? 처리하는 것이 좋다.
+
+        intent?.let {
+            val name: String? = it.getStringExtra("name")
+            val age = it.getIntExtra("age", 0)
+            val address: String? = it.getStringExtra("address")
+
+            println(name?.length)
+            toast("$name $age $address")
+        }
+
         // Fragment를 적용한다.
         val fragment = MainFragment()
         supportFragmentManager.beginTransaction()
                 .add(R.id.main_frame, fragment)
                 .commit()
     }
+
 
     /*
     override fun onCreate(savedInstanceState: Bundle?) {

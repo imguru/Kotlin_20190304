@@ -1,16 +1,14 @@
 package xyz.ourguide.lge.myapplication
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_second.*
-import org.jetbrains.anko.alert
+import org.jetbrains.anko.*
 import org.jetbrains.anko.appcompat.v7.Appcompat
-import org.jetbrains.anko.longToast
-import org.jetbrains.anko.selector
-import org.jetbrains.anko.toast
 
 // Anko: Jetbrains
 //   - Android Kotlin
@@ -91,10 +89,29 @@ class SecondActivity : AppCompatActivity() {
             }
             */
 
-            // Progress Dialog - deprecated!!!
+            // 3. Progress Dialog - deprecated!!!
             //  : 앱을 만들 때 절대 로딩 다이얼로그를 통해 처리하면 안됩니다.
 
-            
+
+            // 4. Activity 전환
+            // val intent = Intent(this, MainActivity::class.java)
+            // startActivity(intent)
+
+            // 아래의 함수는 다음 액티비티로 데이터를 넘기지 않을 경우 사용할 수 있습니다.
+            // startActivity<MainActivity>()
+
+            // startActivity<MainActivity>(
+            //        "name2" to "Tom",
+            //        "age" to 42,
+            //        "address" to "Suwon"
+            // )
+
+            val intent = intentFor<MainActivity>(
+                    "name" to "Tom",
+                    "age" to 42,
+                    "address" to "Suwon"
+            )
+            startActivity(intent)
 
         }
 
