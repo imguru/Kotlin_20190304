@@ -15,9 +15,6 @@ package ex26_2
 //             map, flatMap, filter ...
 
 
-
-
-
 // 'Collection'을 다루는 다양한 연산자들
 //   -> map, filter, forEach, flatMap, groupBy, zip
 // 1. Kotlin - Sequence
@@ -98,7 +95,6 @@ fun main() {
 // last: 요소의 마지막을 얻는 연산  - lastOrNull
 // distinct: 중복된 항목을 걸러낸다. - unique
 // zip: 두 컬렉션을 조합해서 새로운 컬렉션을 생성합니다.
-
 fun main() {
     val countries = listOf("Korea", "United States", "China", "Japan")
     val codes = listOf("KR", "US", "CN", "JP")
@@ -151,15 +147,8 @@ fun main() {
     }
 
 
-
-
-
     println(result)
 }
-
-
-
-
 
 
 
