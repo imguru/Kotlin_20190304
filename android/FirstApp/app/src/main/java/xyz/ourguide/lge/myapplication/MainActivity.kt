@@ -125,6 +125,11 @@ class MainFragment : Fragment() {
 
 data class Country(val name: String, val code: String)
 
+// ListView: 개발자가 직접 View를 재활용하는 코드를 작성해야 했습니다. => View Holder Pattern
+
+// RecyclerView: View를 재활용할 수 있는 기능을 제공합니다.
+//               레이아웃 매니저를 통해 화면에 표현되는 방식을 변경하는 것이 가능합니다.
+
 class CityAdapter : RecyclerView.Adapter<CityAdapter.Holder>() {
     // var countries: List<Country> = emptyList()
 
