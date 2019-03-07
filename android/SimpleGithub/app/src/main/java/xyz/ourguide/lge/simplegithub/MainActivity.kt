@@ -40,10 +40,17 @@ const val TAG = "MainActivity"
 //  "id": 591413,
 //  "avatar_url": "https://avatars0.githubusercontent.com/u/591413?v=4",
 
+// model을 사용할 때 반드시 주의할 점
+//  => Proguard
+//     1) 난독화 - 코드를 읽을 수 없도록, 이름을 변경하는 작업
+//     2) 사용하지 않는 메소드를 제거해서, apk 크기를 작게 만들어 줍니다.
+
+//  => model 클래스들은 반드시 난독화의 예외 규칙에 주어야 합니다.
+//    Proguard 내일 보여줄 것.
 data class User(val login: String,
                 val id: Int,
-                @field:SerializedName("avatar_url") val avatarUrl: String)
-
+                @field:SerializedName("avatar_url") val avatarUrl: String,
+                val location: String)
 
 class MainActivity : AppCompatActivity() {
     // private static final String TAG = "MainActivity"
