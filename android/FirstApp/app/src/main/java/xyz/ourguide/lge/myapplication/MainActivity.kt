@@ -16,6 +16,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_main.*
 import kotlinx.android.synthetic.main.item_view.view.*
 import xyz.ourguide.lge.myapplication.databinding.MainActivityBinding
+import kotlin.properties.Delegates
 
 // Project  - build.gradle
 //   Module - build.gradle
@@ -110,18 +111,28 @@ class MainFragment : Fragment() {
             recyclerView.adapter = adapter
         }
 
-        adapter.countries = listOf(
-                Country("Korea", "KR"),
-                Country("Korea", "KR"),
-                Country("Korea", "KR")
-        )
+        reloadButton.setOnClickListener {
+            adapter.countries = listOf(
+                    Country("Korea", "KR"),
+                    Country("Korea", "KR"),
+                    Country("Korea", "KR")
+            )
+            // adapter의 데이터를 변경했을 경우, 데이터가 변경되었다는 사실을 adapter에게 알려야 한다.
+            // adapter.notifyDataSetChanged()
+        }
     }
 }
 
 data class Country(val name: String, val code: String)
 
 class CityAdapter : RecyclerView.Adapter<CityAdapter.Holder>() {
-    var countries: List<Country> = emptyList()
+    // var countries: List<Country> = emptyList()
+
+    // 프로퍼티 위임 객체를 사용해서, 위의 프로퍼티의 값이 변경될 때마다
+    // 자동으로 notifyDataSetChanged 수행될 수 있도록 한다.
+    var countries: List<Country> by Delegates.observable(emptyList()) { _, _, _ ->
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder
         = Holder(parent)
