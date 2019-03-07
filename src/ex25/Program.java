@@ -1,6 +1,9 @@
 package ex25;
 
 import java.io.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 // Decorator Pattern
 
@@ -90,6 +93,13 @@ public class Program {
             e.printStackTrace();
         }
         */
+
+        List<String> cities = Arrays.asList("A", "B", "C");
+
+        List<Integer> result = cities.stream()
+                .map(String::length)
+                .collect(Collectors.toList());
+
     }
 }
 
