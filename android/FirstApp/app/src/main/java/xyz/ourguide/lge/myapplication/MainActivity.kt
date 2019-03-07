@@ -10,7 +10,11 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_main.*
+import kotlinx.android.synthetic.main.item_view.view.*
 import xyz.ourguide.lge.myapplication.databinding.MainActivityBinding
 
 // Project  - build.gradle
@@ -67,8 +71,8 @@ class MainActivity : AppCompatActivity() {
         // Fragment를 적용한다.
         val fragment = MainFragment()
         supportFragmentManager.beginTransaction()
-            .add(R.id.main_frame, fragment)
-            .commit()
+                .add(R.id.main_frame, fragment)
+                .commit()
     }
 
     /*
@@ -91,9 +95,53 @@ class MainFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
+    val adapter: CityAdapter = CityAdapter()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        // ...
+        // view.findViewById(R.id.recycler_view) - KTX
+        // recyclerView
+        //   1) item_view.xml
+        //   2) adapter
+
+        //
+        // 1. requireActivity(): IllegalStateException
+        // 2. let: null이 아닌 경우 처리하도록 로직을 작성할 수 있다.
+        activity?.let { activity ->
+            recyclerView.layoutManager = LinearLayoutManager(activity)
+            recyclerView.adapter = adapter
+        }
+
+        adapter.countries = listOf(
+                Country("Korea", "KR"),
+                Country("Korea", "KR"),
+                Country("Korea", "KR")
+        )
     }
+}
+
+data class Country(val name: String, val code: String)
+
+class CityAdapter : RecyclerView.Adapter<CityAdapter.Holder>() {
+    var countries: List<Country> = emptyList()
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder
+        = Holder(parent)
+
+    override fun getItemCount(): Int = countries.count()
+
+    override fun onBindViewHolder(holder: Holder, position: Int) {
+        // holder.itemView.nameTextView.text = "China"
+        // holder.itemView.codeTextView.text = "CN"
+        val model = countries[position]
+
+        with (holder.itemView) {
+            nameTextView.text = model.name
+            codeTextView.text = model.code
+        }
+    }
+
+    class Holder(parent: ViewGroup)
+        : RecyclerView.ViewHolder(LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_view, parent, false))
 }
 
 
