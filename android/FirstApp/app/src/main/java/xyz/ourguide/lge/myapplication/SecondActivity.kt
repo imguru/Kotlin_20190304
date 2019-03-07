@@ -114,9 +114,27 @@ class SecondActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
-
     }
 }
+
+// SimpleGithubApp
+//    : api.github.com
+
+//   => Retrofit + OkHttp + Gson + Rx
+//       - Square           - Google
+
+//   => Data Binding + View Model
+
+//   => REST API(JSON) -> App
+
+
+
+
+
+
+
+
+
 
 
 
