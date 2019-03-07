@@ -2,9 +2,15 @@ package xyz.ourguide.lge.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import kotlinx.android.synthetic.main.activity_main.*
 import xyz.ourguide.lge.myapplication.databinding.MainActivityBinding
 
 // Project  - build.gradle
@@ -32,6 +38,7 @@ import xyz.ourguide.lge.myapplication.databinding.MainActivityBinding
 
 
 class MainActivity : AppCompatActivity() {
+    /*
     // Data Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,19 +54,22 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show()
         }
     }
+    */
 
-
-    /*
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        helloButton.setOnClickListener {
-            Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show()
-        }
-    }
-    */
+//        hello_button.setOnClickListener {
+//            Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show()
+//        }
 
+        // Fragment를 적용한다.
+        val fragment = MainFragment()
+        supportFragmentManager.beginTransaction()
+            .add(R.id.main_frame, fragment)
+            .commit()
+    }
 
     /*
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -74,7 +84,17 @@ class MainActivity : AppCompatActivity() {
     */
 }
 
+class MainFragment : Fragment() {
+    override fun onCreateView(inflater: LayoutInflater,
+                              container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.fragment_main, container, false)
+    }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        // ...
+    }
+}
 
 
 
