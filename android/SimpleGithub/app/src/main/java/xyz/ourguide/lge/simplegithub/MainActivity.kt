@@ -2,11 +2,68 @@ package xyz.ourguide.lge.simplegithub
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.Response
+import okhttp3.logging.HttpLoggingInterceptor
 
 // SSL - proxy
 // mLGE: 4f3d2s1a@@
 
-// SimpleGithubApp
+// OkHttpClient
+
+const val TAG = "MainActivity"
+
+class MainActivity : AppCompatActivity() {
+    // private static final String TAG = "MainActivity"
+    // private static final String TAG = MainActivity::class.getSimpleName()
+    companion object {
+        // const val: 컴파일 타임 상수     // const, constexpr
+        //       val: 런타임 상수         // const
+
+        // const val TAG = "MainActivity"
+        // val TAG = MainActivity::class.java.simpleName
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        sampleButton.setOnClickListener {
+            // Background Thread 생성 코드
+            Thread {
+                val client = OkHttpClient.Builder().apply {
+                    addInterceptor(HttpLoggingInterceptor().apply {
+                        level = HttpLoggingInterceptor.Level.BODY
+                    })
+                }.build()
+                // 동기 / 비동기
+
+                // 1. Request
+                val request = Request.Builder().apply {
+                    url("https://api.github.com/users/ourguide")
+                }.build()
+
+                // 2. 동기 호출
+                //    : 절대 UI(메인) 스레드에서 호출하면 안됩니다.
+                //    => NetworkOnMainThreadException
+                val call = client.newCall(request)
+
+                // 3. 결과를 받는다.
+                val response: Response = call.execute()
+                response.body()?.let { responseBody ->
+                    Log.e(TAG, responseBody.string())
+                }
+            }.start()
+        }
+    }
+}
+
+
+
 //   => Retrofit
 //         implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
 //         implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
@@ -37,11 +94,3 @@ import android.os.Bundle
 
 //      Gson
 //        implementation 'com.google.code.gson:gson:2.8.5'
-
-class MainActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
-}
