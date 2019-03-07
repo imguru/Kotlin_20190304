@@ -13,11 +13,11 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        tools:listitem="@layout/item_view"
         app:layout_constraintBottom_toTopOf="@+id/reloadButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_view" />
 
     <Button
         android:id="@+id/reloadButton"
