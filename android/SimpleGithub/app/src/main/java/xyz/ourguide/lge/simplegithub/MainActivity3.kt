@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.jakewharton.rxbinding3.view.clicks
 import io.reactivex.Observable
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -292,6 +293,23 @@ class MainActivity3 : AppCompatActivity() {
 
         }
 
+        compositeDisposable += searchButton.clicks()
+                .flatMap {
+                    rxGithubApi.rxGetUser("sample")
+                }
+                .subscribeBy(
+                        onNext = {
+                            Log.e(TAG, "onClick - $it")
+                        },
+                        onComplete = {
+
+                        },
+                        onError = {
+
+                        }
+                )
+
+        /*
         searchButton.setOnClickListener {
             // disposable.dispose()
             // Log.e(TAG, "${disposable.isDisposed}")
@@ -304,6 +322,7 @@ class MainActivity3 : AppCompatActivity() {
             // List<Integer> list = Arrays.asList(1, 2, 3, 4, 5)
             // list.get(0)
         }
+        */
 
     }
 
