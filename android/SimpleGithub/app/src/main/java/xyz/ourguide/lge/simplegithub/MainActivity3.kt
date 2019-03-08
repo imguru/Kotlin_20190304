@@ -276,6 +276,7 @@ class MainActivity3 : AppCompatActivity() {
             )
             */
 
+            // https://stackoverflow.com/questions/49154069/why-is-doondispose-not-called
             compositeDisposable += Observables.zip(
                 rxGithubApi.rxGetUser("ourguide"),
                 rxGithubApi.rxSearchRepo("sample")
