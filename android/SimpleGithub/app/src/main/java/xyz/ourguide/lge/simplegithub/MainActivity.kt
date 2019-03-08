@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
 import okhttp3.logging.HttpLoggingInterceptor
+import xyz.ourguide.lge.simplegithub.model.User
 import java.io.IOException
 
 // SSL - proxy
@@ -46,11 +48,12 @@ const val TAG = "MainActivity"
 //     2) 사용하지 않는 메소드를 제거해서, apk 크기를 작게 만들어 줍니다.
 
 //  => model 클래스들은 반드시 난독화의 예외 규칙에 주어야 합니다.
-//    Proguard 내일 보여줄 것.
-data class User(val login: String,
-                val id: Int,
-                @field:SerializedName("avatar_url") val avatarUrl: String,
-                val location: String)
+//data class User(
+//    val login: String,
+//    val id: Int,
+//    @field:SerializedName("avatar_url") val avatarUrl: String,
+//    val location: String
+//)
 
 class MainActivity : AppCompatActivity() {
     // private static final String TAG = "MainActivity"
@@ -111,16 +114,16 @@ class MainActivity : AppCompatActivity() {
                 success = { response ->
                     response.body()?.let { body ->
                         val json = body.string()
-                        val user = gson.fromJson(json, User::class.java)
+                        // val user = gson.fromJson(json, User::class.java)
+                        val user = gson.fromJson<User>(json)
 
                         runOnUiThread {
                             Toast.makeText(
-                                this@MainActivity,
+                                this,
                                 "$user", Toast.LENGTH_SHORT
                             ).show()
                         }
                     }
-
 
 //                    runOnUiThread {
 //                        Toast.makeText(this@MainActivity,
@@ -129,8 +132,10 @@ class MainActivity : AppCompatActivity() {
                 },
                 failure = {
                     runOnUiThread {
-                        Toast.makeText(this@MainActivity,
-                            "Fail!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this,
+                            "Fail!", Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
             )
@@ -177,12 +182,18 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
+// gson.fromJson(json, User::class.java)
+inline fun <reified T> Gson.fromJson(json: String): T =
+    fromJson(json, T::class.java)
+
 
 // OkHttpClient Call객체의 enqueue는 무명객체 밖에 사용할 수 없다.
 //  => 람다 블록을 통해 사용할 수 있도록 래퍼 함수를 제공하자.
-inline fun Call.enqueue(crossinline success: (Response) -> Unit,
-                        crossinline failure: (IOException) -> Unit) {
-    enqueue(object: Callback {
+inline fun Call.enqueue(
+    crossinline success: (Response) -> Unit,
+    crossinline failure: (IOException) -> Unit
+) {
+    enqueue(object : Callback {
         override fun onFailure(call: Call, e: IOException) {
             failure(e)
         }
@@ -192,8 +203,6 @@ inline fun Call.enqueue(crossinline success: (Response) -> Unit,
         }
     })
 }
-
-
 
 
 //   => Retrofit
