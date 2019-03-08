@@ -8,8 +8,7 @@ import java.util.*
 data class User(
     val login: String,
     val id: Int,
-    @field:SerializedName("avatar_url") val avatarUrl: String,
-    val location: String
+    @field:SerializedName("avatar_url") val avatarUrl: String
 )
 
 data class RepoSearchResponse(

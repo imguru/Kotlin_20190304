@@ -1,6 +1,7 @@
 package xyz.ourguide.lge.simplegithub
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -12,6 +13,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Query
+import xyz.ourguide.lge.simplegithub.model.RepoSearchResponse
 import xyz.ourguide.lge.simplegithub.model.User
 
 // letsencrypt
@@ -33,6 +36,9 @@ interface GithubApi {
     @GET("users/{login}")
     // @Headers("Content-Type", "application/json")
     fun getUser(@Path("login") login: String): Call<User>
+
+    @GET("search/repositories") // ?q={query}
+    fun searchRepo(@Query("q") query: String): Call<RepoSearchResponse>
 }
 
 // 2. Retrofit 라이브러리가 위의 인터페이스를 직접 분석해서, 코드를 생성해준다.
@@ -55,28 +61,45 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        searchButton.setOnClickListener {
+            githubApi.searchRepo("gson").enqueue(
+                    success = { response ->
+                        if (response.isSuccessful) {
+                            response.body()?.let {
+                                Log.e(TAG, "$it")
+                            }
+                        }
+                    },
+                    failure = {
+
+                    }
+            )
+
+        }
+
+
         sampleButton.setOnClickListener {
             val call = githubApi.getUser("ourguide")
 
             // Retrofit Callback의 호출은 UI 스레드에서 호출됨을 보장합니다.
             //  => runOnUiThread / Handler 를 이용할 필요가 없습니다.
             call.enqueue(
-                success = { response: Response<User> ->
-                    response.body()?.let { user ->
+                    success = { response: Response<User> ->
+                        response.body()?.let { user ->
+                            Toast.makeText(
+                                    this@MainActivity2,
+                                    "Ok - $user",
+                                    Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    },
+                    failure = { t ->
                         Toast.makeText(
-                            this@MainActivity2,
-                            "Ok - $user",
-                            Toast.LENGTH_SHORT
+                                this@MainActivity2,
+                                "Failed - ${t.localizedMessage}",
+                                Toast.LENGTH_SHORT
                         ).show()
                     }
-                },
-                failure = { t ->
-                    Toast.makeText(
-                        this@MainActivity2,
-                        "Failed - ${t.localizedMessage}",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
             )
 
 
@@ -104,8 +127,8 @@ class MainActivity2 : AppCompatActivity() {
 
 // Retrofit Call을 람다를 통해 사용할 수 있도록 해준다.
 inline fun <T> Call<T>.enqueue(
-    crossinline success: (Response<T>) -> Unit,
-    crossinline failure: (Throwable) -> Unit
+        crossinline success: (Response<T>) -> Unit,
+        crossinline failure: (Throwable) -> Unit
 ) {
     enqueue(object : Callback<T> {
         override fun onFailure(call: Call<T>, e: Throwable) {
