@@ -14,13 +14,22 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import xyz.ourguide.lge.simplegithub.model.User
 
+// letsencrypt
+//   : https 인증서를 무료로 발급 받을 수 있습니다.
+//     단점: 3개월마다 갱신해줘야 합니다.
+//    => 아마존에서 인증서 발급 받아서 사용합니다.
+
+// ngrok
+//   : 테스트 목적으로 https 할당 받아서 사용할 수 있는 개발자 도구
+
+
 // baseUrl - https://api.github.com/
 // GET - users/{login}
+// GET - search/repositories?q={text}
 
 // GithubApi.kt
 // 1. REST API에 대한 inteface를 정의합니다.
 interface GithubApi {
-
     @GET("users/{login}")
     // @Headers("Content-Type", "application/json")
     fun getUser(@Path("login") login: String): Call<User>
