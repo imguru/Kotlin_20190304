@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/nameTextView"
-        style="@style/TextAppearance.AppCompat.Headline"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -18,7 +18,7 @@
 
     <TextView
         android:id="@+id/langTextView"
-        style="@style/TextAppearance.AppCompat.Headline"
+        style="@style/TextAppearance.AppCompat.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
